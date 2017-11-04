@@ -1,4 +1,10 @@
-<p>Servers - Multiple components below</p>
+<!-- Property binding - One way binding for binding to html element properties -->
+<button class="btn btn-primary" 
+[disabled] = "!allowServer"
+(click) = "onCreateServer()">Add Server</button> 
+<!-- Event binding example - onCreateServer ts method is executed when someone clicks the button -->
+<p [innerText] = "allowServer"></p>
+<p>{{ serverCreationStatus }}</p>
 <hr>
 <app-server></app-server>
 <app-server></app-server>
